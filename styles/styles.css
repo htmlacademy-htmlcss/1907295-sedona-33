@@ -62,6 +62,17 @@ a {
   border-radius: 4px;
 }
 
+.button-loading {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83B3D3;
+  width: 620px;
+  border: 0;
+  border-radius: 4px;
+  margin: 0;
+  padding: 17px 0px;
+}
+
 .container {
   font-family: "PT Sans", "Arial", "sans-serif";
   width: 1200px;
@@ -278,6 +289,11 @@ a {
   padding: 94px 200px;
 }
 
+.newsletter-catalog {
+  margin: 0;
+  padding: 73px 128px 141px 128px;
+}
+
 .newsletter-item-index {
   color: #FFFFFF;
   font-size: 30px;
@@ -463,6 +479,13 @@ a {
   margin: 0;
   padding-top: 9px;
   padding-bottom: 10px;
+}
+
+.loading {
+  margin: 0;
+  padding: 30px 218px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .pagination-link {
