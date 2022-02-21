@@ -48,7 +48,7 @@
               <ul class="breadcrumbs reset-list">
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">
-                    <img class="breadcrumbs-link" src="" alt="Главная">
+                    <img class="breadcrumbs-link" src="images/home-1.svg" width="12" height="12" alt="Главная">
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -128,11 +128,15 @@
         <div class="sorting">
           <section class="sorting-container">
             <h2 class="sorting-number">Найдено гостиниц: 38</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала дешёвые</option>
-              <option value="cheap">Сначала дорогие</option>
-              <option value="expensive">Сначала популярные</option>
-            </select>
+            <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="sorting-number">Сортировка</label>
+              <select class="select-control" id="sorting-number" aria-label="Сортировка">
+                <option value="popular">Сначала дешёвые</option>
+                <option value="cheap">Сначала дорогие</option>
+                <option value="expensive">Сначала популярные</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отсортировать список</button>
+            </form>
             <a class="button" href="#">
               <span class="visually-hidden">Показать карточки</span>
             </a>
@@ -141,7 +145,7 @@
             </a>
             <a class="button" href="#">
               <span class="visually-hidden">Показать список</span>
-            </a>
+            </a> 
           </section>
           <section class="catalog">
             <h2 class="visually-hidden">Карточка отеля</h2>
