@@ -54,6 +54,7 @@ a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: 0;
 }
 
 .button-navigation {
@@ -67,7 +68,6 @@ a {
   line-height: 26px;
   background-color: #83B3D3;
   width: 620px;
-  border: 0;
   border-radius: 4px;
   margin: 0;
   padding: 17px 0px;
@@ -188,12 +188,6 @@ a {
   text-transform: uppercase;
 }
 
-.appointment-title,
-.newsletter-item-index {
-  margin: 0;
-  padding-bottom: 29px;
-}
-
 .appointment-info {
   margin: 0;
   padding-bottom: 56px;
@@ -291,8 +285,13 @@ a {
 }
 
 .newsletter-catalog {
-  margin: 0;
-  padding: 73px 128px 141px 128px;
+  margin: 73px 128px 141px 128px;
+}
+
+.newsletter-item {
+  width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .newsletter-item-index {
@@ -300,13 +299,17 @@ a {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0px 40px 29px 40px;
+  margin: 0 auto;
+  width: 720px;
 }
 
 .newsletter-title {
   margin: 0;
-  padding: 0px 40px 46px 40px;
+  padding: 46px 40px;
+}
+
+.field {
+  width: 600px;
 }
 
 .form-label {
@@ -413,9 +416,9 @@ a {
 
 .sorting-container {
   display: flex;
-  margin: 0;
-  padding-top: 44px;
-  padding-bottom: 53px;
+  margin-top: 44px;
+  margin-bottom: 53px;
+  align-items: center;
 }
 
 .sorting-number {
@@ -424,17 +427,17 @@ a {
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
+  margin: 0;
   margin-right: 192px;
 }
 
-.select-control {
+.select-control-list {
   font-size: 18px;
   line-height: 23px;
   width: 287px;
   padding: 12px 21px 13px 19px;
   color: #333333;
   background-color: #ffffff;
-  
 }
 
 .sorting-container .button {
@@ -522,13 +525,23 @@ a {
 .pagination-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 33px;
+  margin-bottom: 73px;
 }
 
 .pagination-list {
   display: flex;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: flex;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
   color: #ffffff;
   background-color: #83B3D3;
   font-weight: 700;
@@ -536,6 +549,9 @@ a {
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-current {
@@ -545,4 +561,18 @@ a {
 
 .quantity {
   display: flex;
+  align-items: center;
+}
+
+.quantity-type {
+  margin-left: 51px;
+}
+
+.select-control {
+  width: 160px;
+  height: 48px;
+  margin: 0;
+  padding: 13px 20px 12px 17px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
