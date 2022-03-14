@@ -84,10 +84,21 @@ a {
   padding: 17px 0px;
 }
 
-.button-catalog {
+.button-catalog,
+.button-catalog-favorites {
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.button-catalog {
+  width: 133px;
+}
+
+.button-catalog-favorites {
+  width: 141px;
 }
 
 .button-catalog button-brown {
@@ -149,6 +160,7 @@ a {
 
 .button-product {
   display: flex;
+  justify-content: space-between;
   padding: 16px 0px;
 }
 
@@ -157,6 +169,27 @@ a {
   border-radius: 10px;
   font-size: 20px;
   line-height: 36px;
+}
+
+.button-reset {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-reset:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .newsletter-button {
@@ -175,6 +208,17 @@ a {
   width: 160px;
   min-height: 48px;
   border-radius: 4px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.button-implement:hover {
+  background: #68A2CA;
+}
+
+.button-implement:focus {
+  background: #68A2CA;
+  border: 3px solid #FFFFFF;
 }
 
 .container {
@@ -527,7 +571,7 @@ a {
 
 .range {
   width: 287px;
-  margin-top: 34px;
+  margin-top: 4px;
 }
 
 .range-wrapper-inputs {
@@ -535,6 +579,13 @@ a {
   box-sizing: border-box;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
+}
+
+.filter-catalog-group-price {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 167px;
 }
 
 .filter-label-min,
@@ -663,7 +714,7 @@ a {
   fill: #68A2CA;
   border: 3px solid #83B3D3;
   border-radius: 10px;
-  padding: 12px 11px;
+  padding: 11px 11px;
 }
 
 .page-footer {
@@ -724,13 +775,13 @@ a {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin: 0;
-  padding: 35px 72px 83px 71px;
 }
 
 .search {
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
+  margin: 0;
+  padding: 35px 601px 45px 71px;
 }
 
 .inner-header-title {
@@ -757,6 +808,12 @@ a {
   line-height: 21px;
 }
 
+.filter {
+  width: 1056px;
+  margin: 0 auto;
+  padding-bottom: 83px;
+}
+
 .filter-catalog {
   display: flex;
 }
@@ -771,15 +828,23 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  margin-bottom: 30px;
+  margin-right: 67px;
+  padding: 0;
 }
 
-.filter-item:nth-child(3n) {
+.filter-catalog-item {
+  margin-bottom: 13px;
+}
+
+.filter-catalog-item:nth-child(3n) {
   margin-bottom: 0;
 }
 
 .filter-action {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 
 .control {
@@ -797,6 +862,41 @@ a {
   background: #FFFFFF;
   border-radius: 4px;
 } 
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  content: "";
+  background-image: url("../images/tick.svg");
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-mark:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control-mark:focus {
+  background: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
 
 .control-input {
   font-size: 18px;
@@ -936,6 +1036,13 @@ a {
   font-size: 18px;
   line-height: 23px;
   margin: 0;
+}
+
+.house-list {
+  margin: 0;
+  padding: 0;
+  width: 133px;
+  margin-right: 25px;
 }
 
 .product-rating {
