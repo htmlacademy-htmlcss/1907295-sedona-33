@@ -117,7 +117,7 @@ a {
 
 .button-brown:focus {
   background-color: #615048;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .button-brown:active {
@@ -134,7 +134,7 @@ a {
 
 .button-green:focus {
   background-color: #6C9E42;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 
 .button-green:active {
@@ -151,7 +151,7 @@ a {
 
 .button-blue:focus {
   background-color: #68A2CA;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 
 .button-blue:active {
@@ -338,6 +338,9 @@ a {
 .logo-style {
   display: block;
   margin: 0 auto;
+  /* background-image: url("../images/divider.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat; */
 }
 
 .promo-text {
@@ -598,20 +601,21 @@ a {
 
 .filter-label-min:hover,
 .filter-label-max:hover {
-  border: 2px solid #FFFFFF;
+  outline: 2px solid #FFFFFF;
   opacity: 0.6;
 }
 
 .filter-label-min:focus,
 .filter-label-max:focus {
-  border: 2px solid #FFFFFF;
-  box-shadow: 0px 0px 0px 3px #81B3D2;
+  outline: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: #81B3D2;
 }
 
 .filter-label-min:active,
 .filter-label-max:active {
-  background: #756257;
-  border: 2px solid #FFFFFF;
+  background-color: #756257;
+  outline: 2px solid #FFFFFF;
 }
 
 .filter-min,
@@ -638,6 +642,10 @@ a {
 .filter-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .range-scale {
@@ -705,15 +713,18 @@ a {
   margin-right: auto;
 }
 
-.footer-social-link:hover .social-icon {
+.social-icon:hover {
   fill: #68A2CA;
 }
 
-
-.footer-social-link:focus .social-icon {
+.social-icon:focus {
   fill: #68A2CA;
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
   border-radius: 10px;
+}
+
+.social-icon:active {
+  opacity: 0.3;
 }
 
 .page-footer {
@@ -735,15 +746,18 @@ a {
   margin-left: auto;
 }
 
-.htmlacademy-link:hover .navigation-icon {
+.navigation-icon:hover {
   fill: #756257;
 }
 
-.htmlacademy-link:focus .navigation-icon {
+.navigation-icon:active {
+  fill: rgba(117, 98, 87, 0.3);
+}
+
+.htmlacademy-link:focus {
   fill: #756257;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 10px;
-  outline: 15px;
 }
 
 .contacts-phone:hover {
@@ -771,7 +785,7 @@ a {
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/main/catalog-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -780,7 +794,8 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 35px 601px 45px 71px;
+  /* padding: 35px 601px 45px 71px; */
+  padding: 35px 601px 0px 71px;
 }
 
 .inner-header-title {
@@ -811,6 +826,7 @@ a {
   width: 1056px;
   margin: 0 auto;
   padding-bottom: 81px;
+  padding-top: 45px;
 }
 
 .filter-catalog {
@@ -836,7 +852,7 @@ a {
   margin-bottom: 13px;
 }
 
-.filter-catalog-item:nth-child(3n) {
+.filter-catalog-item:last-child {
   margin-bottom: 0;
 }
 
@@ -893,8 +909,8 @@ a {
 }
 
 .control-mark:focus {
-  background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  /* background: rgba(255, 255, 255, 0.6); */
+  outline: 3px solid #83B3D3;
 }
 
 .control-input {
@@ -1032,6 +1048,7 @@ a {
 
 .house-list-price,
 .quantity {
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   margin: 0;
@@ -1141,6 +1158,7 @@ a {
   padding: 13px 20px 12px 17px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .modal-container {
